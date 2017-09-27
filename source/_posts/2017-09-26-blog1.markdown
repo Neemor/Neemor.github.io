@@ -1,0 +1,24 @@
+---
+layout: post
+title: "我的第一个博客"
+date: 2017-09-26 22:03:31 +0800
+comments: true
+categories: [生活，学习]
+---
+
+#你好，世界
+##我可以学的更多，我很快乐
+**这是加粗**
+
+- php
+	- foreach
+	- while
+	
+- mysql
+- javascript
+- html
+
+
+
+
+
