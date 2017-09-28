@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+    <title><![CDATA[Category: 配置环境 | 东东的小窝]]></title>
+    <link href="http://neemor.github.io/blog/categories/pei-zhi-huan-jing/atom.xml" rel="self"/>
+    <link href="http://neemor.github.io/"/>
+    <updated>2017-09-28T22:45:13+08:00</updated>
+    <id>http://neemor.github.io/</id>
+    <author>
+        <name><![CDATA[潘东东]]></name>
+        
+      </author>
+    <generator uri="http://octopress.org/">Octopress</generator>
+
+    
+    <entry>
+        <title type="html"><![CDATA[Apache配置虚拟机]]></title>
+        <link href="http://neemor.github.io/blog/2017/09/28/1/"/>
+        <updated>2017-09-28T20:38:39+08:00</updated>
+        <id>http://neemor.github.io/blog/2017/09/28/1</id>
+        <content type="html"><![CDATA[<h6>Virtual hosts</h6>
+
+<h4>Include conf/extra/httpd-vhosts.conf</h4>
+
+<p>找到 上面相关文本，去掉#Include conf/extra/httpd-vhosts.conf前的#。</p>
+
+<h6>Virtual hosts</h6>
+
+<p>Include conf/extra/httpd-vhosts.conf</p>
+
+<p>  <!-- more -->
+保存退出。
+3、编辑conf目录下extra文件夹下的httpd-vhosts.conf。
+去掉实例配置，添加新有配置。以新浪微博为例，配置文件如下：</p>
+
+<h5>#</h5>
+
+<h6>Virtual Hosts</h6>
+
+<h5>#</h5>
+
+<h6>If you want to maintain multiple domains/hostnames on your</h6>
+
+<h6>machine you can setup VirtualHost containers for them. Most configurations</h6>
+
+<h6>use only name-based virtual hosts so the server doesn&rsquo;t need to worry about</h6>
+
+<h6>IP addresses. This is indicated by the asterisks in the directives below.</h6>
+
+<h5>#</h5>
+
+<h6>Please see the documentation at</h6>
+
+<h6>&lt;URL:<a href="http://httpd.apache.org/docs/2.2/vhosts/">http://httpd.apache.org/docs/2.2/vhosts/</a>></h6>
+
+<h6>for further details before you try to setup virtual hosts.</h6>
+
+<h5>#</h5>
+
+<h6>You may use the command line option &lsquo;-S&rsquo; to verify your virtual host</h6>
+
+<h6>configuration.</h6>
+
+<h5>#</h5>
+
+<h6>Use name-based virtual hosting.</h6>
+
+<h5>#</h5>
+
+<p>NameVirtualHost *:80</p>
+
+<h5>#</h5>
+
+<h6>VirtualHost example:</h6>
+
+<h6>Almost any Apache directive may go into a VirtualHost container.</h6>
+
+<h6>The first VirtualHost section is used for all requests that do not</h6>
+
+<h6>match a ServerName or ServerAlias in any <VirtualHost> block.</h6>
+
+<h5>#</h5>
+
+<p><VirtualHost *:80>
+    ######管理员邮箱
+    ServerAdmin <a href="&#109;&#97;&#105;&#108;&#x74;&#111;&#x3a;&#x6a;&#105;&#x61;&#110;&#x67;&#x66;&#101;&#110;&#x67;&#51;&#x40;&#115;&#x74;&#x61;&#102;&#x66;&#x2e;&#x73;&#x69;&#x6e;&#x61;&#46;&#99;&#111;&#x6d;&#x2e;&#99;&#x6e;">&#x6a;&#x69;&#x61;&#x6e;&#103;&#x66;&#x65;&#x6e;&#103;&#x33;&#64;&#x73;&#116;&#x61;&#x66;&#102;&#46;&#115;&#105;&#110;&#x61;&#x2e;&#x63;&#x6f;&#109;&#46;&#x63;&#x6e;</a>
+    ######项目根目录 <br/>
+    DocumentRoot &ldquo;D:/htdocs/frame_export&rdquo;    <br/>
+    ######域名
+    ServerName test.t.sina.com.cn<br/>
+    ######别名                    <br/>
+    ServerAlias test.t.sina.com.cn
+    ######错误日志路径
+    ErrorLog &ldquo;logs/test.t.sins.com.cn-error.log&rdquo;
+    CustomLog &ldquo;logs/test.t.sins.com.cn-access.log&rdquo; common
+    RewriteEngine on
+    ######重写规则，可根据实际需要添加
+    RewriteRule  ^/(.*)$       /apps/index.php [L]
+</VirtualHost>
+4、编辑本地host文件，以windows为例
+进入C:\Windows\System32\drivers\etc
+记事本打开hosts文件
+最后添加
+ 127.0.0.1       localhost
+ 127.0.0.1       test.t.sina.com.cn
+例子：</p>
+
+<h6>Copyright &copy; 1993-2009 Microsoft Corp.</h6>
+
+<h5>#</h5>
+
+<h6>This is a sample HOSTS file used by Microsoft TCP/IP for Windows.</h6>
+
+<h5>#</h5>
+
+<h6>This file contains the mappings of IP addresses to host names. Each</h6>
+
+<h6>entry should be kept on an individual line. The IP address should</h6>
+
+<h6>be placed in the first column followed by the corresponding host name.</h6>
+
+<h6>The IP address and the host name should be separated by at least one</h6>
+
+<h6>space.</h6>
+
+<h5>#</h5>
+
+<h6>Additionally, comments (such as these) may be inserted on individual</h6>
+
+<h6>lines or following the machine name denoted by a &lsquo;######&rsquo; symbol.</h6>
+
+<h5>#</h5>
+
+<h6>For example:</h6>
+
+<h5>#</h5>
+
+<h6>102.54.94.97     rhino.acme.com          ###### source server</h6>
+
+<h6>38.25.63.10     x.acme.com              ###### x client host</h6>
+
+<h6>localhost name resolution is handled within DNS itself.</h6>
+
+<p> 127.0.0.1       localhost</p>
+
+<h6>::1             localhost</h6>
+
+<p> 127.0.0.1       test.t.sina.com.cn
+保存退出
+5、重启apache，浏览器输入<a href="http://test.t.sina.com.cn">http://test.t.sina.com.cn</a></p>
+]]></content>
+    </entry>
+    
+</feed>
