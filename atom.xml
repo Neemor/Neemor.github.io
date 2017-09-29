@@ -4,7 +4,7 @@
     <title><![CDATA[东东的小窝]]></title>
     <link href="http://neemor.github.io/atom.xml" rel="self"/>
     <link href="http://neemor.github.io/"/>
-    <updated>2017-09-29T16:41:03+08:00</updated>
+    <updated>2017-09-29T16:55:39+08:00</updated>
     <id>http://neemor.github.io/</id>
     <author>
         <name><![CDATA[潘东东]]></name>
@@ -23,11 +23,11 @@
 <!--more-->  
 
 
-<p><img src="https://pic3.zhimg.com/50/v2-76578462b9463e0e6fa6d22651636c4a_hd.jpg" alt="ku" /></p>
+<p><img src="images/mgmd.jpg" alt="ku" /></p>
 
 <h3>所以晚上吃什么</h3>
 
-<p><img src="https://pic2.zhimg.com/50/v2-78bd1ed052cdec794fa88db6cf113321_hd.jpg" alt="kk" /></p>
+<p><img src="images/wbk.jpg" alt="kk" /></p>
 
 <h3>管你身材好不好哟 ！！</h3>
 
@@ -122,7 +122,7 @@
 
 <p><VirtualHost *:80>
     ######管理员邮箱
-    ServerAdmin <a href="&#109;&#x61;&#105;&#x6c;&#116;&#111;&#x3a;&#106;&#x69;&#x61;&#x6e;&#x67;&#x66;&#101;&#110;&#x67;&#x33;&#64;&#x73;&#116;&#97;&#102;&#102;&#x2e;&#x73;&#x69;&#x6e;&#97;&#46;&#x63;&#111;&#x6d;&#46;&#x63;&#110;">&#x6a;&#x69;&#97;&#x6e;&#x67;&#102;&#101;&#110;&#x67;&#x33;&#64;&#x73;&#116;&#x61;&#x66;&#x66;&#x2e;&#x73;&#105;&#x6e;&#97;&#46;&#99;&#x6f;&#109;&#46;&#99;&#110;</a>
+    ServerAdmin <a href="&#x6d;&#x61;&#105;&#x6c;&#x74;&#x6f;&#58;&#x6a;&#x69;&#97;&#110;&#x67;&#102;&#x65;&#x6e;&#x67;&#x33;&#64;&#115;&#x74;&#97;&#102;&#x66;&#46;&#115;&#x69;&#110;&#x61;&#x2e;&#99;&#x6f;&#109;&#x2e;&#99;&#110;">&#106;&#105;&#x61;&#x6e;&#x67;&#x66;&#x65;&#110;&#x67;&#x33;&#x40;&#x73;&#116;&#97;&#x66;&#x66;&#x2e;&#x73;&#105;&#x6e;&#x61;&#46;&#x63;&#x6f;&#109;&#46;&#x63;&#x6e;</a>
     ######项目根目录 <br/>
     DocumentRoot &ldquo;D:/htdocs/frame_export&rdquo;    <br/>
     ######域名
