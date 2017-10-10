@@ -4,7 +4,7 @@
     <title><![CDATA[Category: 学习 | 东东的小窝]]></title>
     <link href="http://neemor.github.io/blog/categories/xue-xi/atom.xml" rel="self"/>
     <link href="http://neemor.github.io/"/>
-    <updated>2017-10-10T11:28:00+08:00</updated>
+    <updated>2017-10-10T11:39:29+08:00</updated>
     <id>http://neemor.github.io/</id>
     <author>
         <name><![CDATA[潘东东]]></name>
@@ -19,6 +19,9 @@
         <updated>2017-10-10T11:24:15+08:00</updated>
         <id>http://neemor.github.io/blog/2017/10/10/nginx</id>
         <content type="html"><![CDATA[<h1>Nginx在linux下的安装</h1>
+
+<p>Nginx(&ldquo;engine x&rdquo;)是一款是由俄罗斯的程序设计师Igor Sysoev所开发高性能的 Web和 反向代理 服务器，也是一个 IMAP/POP3/SMTP 代理服务器。
+在高连接并发的情况下，Nginx是Apache服务器不错的替代品。</p>
 ]]></content>
     </entry>
     
