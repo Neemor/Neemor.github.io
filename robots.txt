@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: http://neemor.github.io/sitemap.xml
